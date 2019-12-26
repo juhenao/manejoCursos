@@ -110,6 +110,10 @@ public class Estudiante{
         return false;
     }
 
+    public Curso buscarCurso(String codigoCurso){
+        return null;
+    }
+
     /**
      * Retorna el codigo del estudiante
      * @return Cordigo del estudiante
