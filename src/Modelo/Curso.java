@@ -11,6 +11,7 @@ public class Curso {
     private String nombreCurso;
     private int creditos;
     private double nota;
+    private String descripcion;
 
     // Creación de constructores
 
@@ -20,10 +21,11 @@ public class Curso {
      * @param nom Nombre del curso
      * @param cred Creditos del curso
      */
-    public Curso(String cod, String nom, int cred){
+    public Curso(String cod, String nom, int cred, String desc){
         this.codigoCurso = cod;
         this.nombreCurso = nom;
         this.creditos = cred;
+        this.descripcion = desc;
     }
 
     // Creacion de metodos
@@ -69,11 +71,19 @@ public class Curso {
     }
 
     /**
-     * Retorna la descripcion del curso
-     * @return Descripcion del curso
+     * Retorna la descripción del curso.
+     * @return  Descripción del curso
      */
-    public String getDescripcion(){
-        return "Descripción del curso";
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    /**
+     * Retorna el codigo del curso
+     * @return Codigo del curso
+     */
+    public String getCodigoCurso() {
+        return codigoCurso;
     }
 
     /**
