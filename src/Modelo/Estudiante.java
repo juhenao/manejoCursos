@@ -28,11 +28,11 @@ public class Estudiante{
         this.apellido = apellido;
         this.codigo = codigo;
 
-        this.curso1 = new Curso("#001", "Programación Java POO", 4);
+        /*this.curso1 = new Curso("#001", "Programación Java POO", 4);
         this.curso2 = new Curso("#002", "Bases de datos MYSQL", 4);
         this.curso3 = new Curso("#003", "Lógica de programación", 3);
         this.curso4 = new Curso("#004", "Matemáticas básicas", 3);
-        this.curso5 = new Curso("#005", "Ingles Técnico", 2);
+        this.curso5 = new Curso("#005", "Ingles Técnico", 2);*/
     }
 
     // Creación de los metodos
@@ -77,6 +77,10 @@ public class Estudiante{
      */
     public boolean tieneCursosCompletos(String codigoCurso){
         return false;
+    }
+
+    public Curso buscarCurso(String codigoCurso){
+        return null;
     }
 
     /**
