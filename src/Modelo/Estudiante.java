@@ -5,11 +5,16 @@ package Modelo;
  * @author Juan Henao
  * @version 1.0
  */
-public class Estudiante extends Curso{
+public class Estudiante{
     // Asignación de atributos
     private int codigo;
     private String nombre;
     private String apellido;
+    private Curso curso1;
+    private Curso curso2;
+    private Curso curso3;
+    private Curso curso4;
+    private Curso curso5;
 
     // Creación de constructores
     /**
@@ -22,6 +27,12 @@ public class Estudiante extends Curso{
         this.nombre = nombre;
         this.apellido = apellido;
         this.codigo = codigo;
+
+        this.curso1 = new Curso("#001", "Programación Java POO", 4);
+        this.curso2 = new Curso("#002", "Bases de datos MYSQL", 4);
+        this.curso3 = new Curso("#003", "Lógica de programación", 3);
+        this.curso4 = new Curso("#004", "Matemáticas básicas", 3);
+        this.curso5 = new Curso("#005", "Ingles Técnico", 2);
     }
 
     // Creación de los metodos
@@ -90,50 +101,5 @@ public class Estudiante extends Curso{
      */
     public String getApellido() {
         return apellido;
-    }
-
-    /**
-     * Crea una instancia del curso 1 del estudinate y lo retorna
-     * @return Curso 1
-     */
-    public Curso getCurso1(){
-        Curso curso1 = new Curso();
-        return curso1;
-    }
-
-    /**
-     * Crea una instancia del curso 2 del estudinate y lo retorna
-     * @return Curso 2
-     */
-    public Curso getCurso2(){
-        Curso curso2 = new Curso();
-        return curso2;
-    }
-
-    /**
-     * Crea una instancia del curso 2 del estudinate y lo retorna
-     * @return Curso 2
-     */
-    public Curso getCurso3(){
-        Curso curso3 = new Curso();
-        return curso3;
-    }
-
-    /**
-     * Crea una instancia del curso 2 del estudinate y lo retorna
-     * @return Curso 2
-     */
-    public Curso getCurso4(){
-        Curso curso4 = new Curso();
-        return curso4;
-    }
-
-    /**
-     * Crea una instancia del curso 2 del estudinate y lo retorna
-     * @return Curso 2
-     */
-    public Curso getCurso5(){
-        Curso curso5 = new Curso();
-        return curso5;
     }
 }
