@@ -85,12 +85,18 @@ public class Estudiante{
     }
 
     /**
-     *
-     * @param codigoCurso
-     * @return
+     * Dice si el estudiante está cursando ese curso
+     * @param codigoCurso Codigo del curso
+     * @return 'true' si está cursando el curso buscado, 'false' si no lo cursa
      */
     public boolean pensumIncluyeCurso(String codigoCurso){
-        return false;
+        if(buscarCurso(codigoCurso) != null){
+            System.out.println("El estudiante tiene el curso: " + buscarCurso(codigoCurso).getNombreCurso());
+            return true;
+        } else {
+            System.out.println("El estudiante no está cursando este curso");
+            return false;
+        }
     }
 
     /**
