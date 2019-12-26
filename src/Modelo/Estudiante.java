@@ -110,7 +110,33 @@ public class Estudiante{
         return false;
     }
 
+    /**
+     * Busca un curso que el estudiante esté tomando
+     * @param codigoCurso Codigo del curso
+     * @return Retona el objeto del curso si este se está tomando
+     */
     public Curso buscarCurso(String codigoCurso){
+        if(codigoCurso == curso1.getCodigoCurso()){
+            return curso1;
+        }
+
+        if(codigoCurso == curso2.getCodigoCurso()){
+            return curso2;
+        }
+
+        if(codigoCurso == curso3.getCodigoCurso()){
+            return curso3;
+        }
+
+        if(codigoCurso == curso4.getCodigoCurso()){
+            return curso4;
+        }
+
+        if(codigoCurso == curso5.getCodigoCurso()){
+            return curso5;
+        }
+
+        System.out.println("El curso no se ha encontrado.");
         return null;
     }
 
